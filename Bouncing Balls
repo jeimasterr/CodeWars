@@ -1,0 +1,14 @@
+public class BouncingBall {
+	
+	public static int bouncingBall(double h, double bounce, double window) {
+	    if(h>0 && (bounce>0.00 && bounce<1.00) && window<h){
+        int count=-1;
+        do{count+=2; h*=bounce;}
+          while(h>window);
+            return count;
+      }else{
+        return -1;
+      }
+      
+	}
+}
